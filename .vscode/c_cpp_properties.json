@@ -10,7 +10,7 @@
             "includePath": [
                 "/Users/bam/code/platformio/m_r_project2-smiley/include",
                 "/Users/bam/code/platformio/m_r_project2-smiley/src",
-                "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src",
+                "/Users/bam/code/platformio/m_r_project2-smiley/.pio/libdeps/nodemcuv2/Servo/src",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/cores/esp8266",
@@ -39,6 +39,7 @@
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SPI",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src",
+                "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2",
                 "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src",
@@ -52,7 +53,7 @@
                 "path": [
                     "/Users/bam/code/platformio/m_r_project2-smiley/include",
                     "/Users/bam/code/platformio/m_r_project2-smiley/src",
-                    "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src",
+                    "/Users/bam/code/platformio/m_r_project2-smiley/.pio/libdeps/nodemcuv2/Servo/src",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/tools/sdk/include",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/tools/sdk/libc/xtensa-lx106-elf/include",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/cores/esp8266",
@@ -81,6 +82,7 @@
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SDFS/src",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SPI",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SPISlave/src",
+                    "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Servo/src",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/SoftwareSerial/src",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/TFT_Touch_Shield_V2",
                     "/Users/bam/.platformio/packages/framework-arduinoespressif8266/libraries/Ticker/src",

@@ -16,7 +16,7 @@ void setup() {
   pinMode(ledPin, OUTPUT);      // declare LED as output
   pinMode(inputPin, INPUT);     // declare sensor as input
   servo.attach(servoPin); 
-  servo.write(0);
+  servo.write(90);
   delay(1000);
 
   Serial.begin(9600);
@@ -28,13 +28,13 @@ void loop(){
         digitalWrite(ledPin, LOW);  // turn LED ON
     if (pirState == LOW) {
       // we have just turned on
-    /*  Serial.println("Motion detected!");
+      Serial.println("Motion detected!");
       servo.write(0);
+      delay(1000);
+      servo.write(180);
       delay(1000);
       servo.write(90);
       delay(1000);
-      servo.write(45);
-      delay(1000); */
 
       // We only want to print on the output change, not state
       pirState = HIGH;
