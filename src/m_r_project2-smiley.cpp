@@ -1,10 +1,12 @@
 /*
  * PIR sensor tester
  */
- 
+#include <Arduino.h>
+#include <Server.h>
+
 int ledPin = 2;               // choose the pin for the LED
 int inputPin = 4;               // choose the input pin (for PIR sensor)
-int pirState = LOW;             // we start, assuming no motion detected
+int pirState = LOW;           // we start, assuming no motion detected
 int val = 0;                    // variable for reading the pin status
  
 void setup() {
