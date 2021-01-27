@@ -11,18 +11,19 @@ int pirPin = 14;               // D5 (GPIO14) or D2 (GPIO4) - choose the input p
 int servoPin = 5;               // D1 GPIO5
 int pirState = LOW;             // we start, assuming no motion detected
 int pirval   = 0;               // variable for reading the pin status
- 
+
 void setup() {
   //pinMode(ledPin, OUTPUT);      // declare LED as output
   pinMode(pirPin, INPUT);     // declare sensor as input
-  servo.attach(servoPin); 
+  servo.attach(servoPin);
+  delay(500);
   servo.write(90);
   delay(1000);
   servo.detach();
 
   Serial.begin(9600);
 }
- 
+
 void loop(){
   pirval = digitalRead(pirPin);  // read input value
   if (pirval == HIGH) {            // check if the input is HIGH
@@ -30,14 +31,19 @@ void loop(){
    if (pirState == LOW) {
      // just turned on
      Serial.println("Motion detected!");
-     servo.attach(servoPin); 
-     while (pirval == HIGH) {
-       servo.write(0);
-       delay(1000);
-       servo.write(180);
+     servo.attach(servoPin);
+     do {
+       servo.write(45);
+       delay(1200);
+       servo.write(135);
        delay(1200);
        pirval = digitalRead(pirPin);
-     }            
+     }
+     while (pirval == HIGH);
+
+     servo.write(90);
+     delay(1000);
+     servo.detach();
 
      pirState = HIGH;
    }
@@ -47,9 +53,7 @@ void loop(){
       // we have just turned off
       Serial.println("Motion ended!");
       // We only want to print on the output change, not state
-      servo.write(90);
-      delay(1000);
-      servo.detach();
+
       pirState = LOW;
     }
   }
